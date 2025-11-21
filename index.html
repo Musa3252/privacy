@@ -7,18 +7,16 @@
   <meta name="description" content="Privacy policy for the Axcended learning and mentorship app and website." />
   <meta name="color-scheme" content="light" />
 
-
+  <!-- Montserrat font (same as other legal pages) -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --nav-bg: #111827;      
-      --nav-text: #F9FAFB;
-      --bg: #F3F4F6;           
+      --bg: #FFFFFF;           /* flat white background like Renderforest */
       --page: #FFFFFF;
       --text: #111827;
       --muted: #6B7280;
-      --accent: #22A6F2;      
+      --accent: #22A6F2;
       --border: #E5E7EB;
       --max-width: 840px;
     }
@@ -59,56 +57,27 @@
       width: auto;
       height: auto;
       padding: 0.5rem 0.75rem;
-      background: var(--nav-bg);
-      color: var(--nav-text);
+      background: #111827;
+      color: #F9FAFB;
       border-radius: 999px;
       z-index: 50;
       margin: 0.5rem;
-    }
-
-    /* Top dark bar like the mockup */
-    .topbar {
-      background: var(--nav-bg);
-      color: var(--nav-text);
-      padding: 0.9rem 1.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .topbar-brand {
-      font-size: 1.1rem;
-      letter-spacing: 0.18em;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    .topbar-menu {
-      display: inline-flex;
-      flex-direction: column;
-      gap: 0.18rem;
-    }
-
-    .topbar-menu span {
-      width: 18px;
-      height: 2px;
-      border-radius: 999px;
-      background: var(--nav-text);
     }
 
     main {
       display: flex;
       justify-content: center;
       padding: 1.5rem 1rem 2.5rem;
+      background: var(--bg); /* flat */
     }
 
     .page {
       background: var(--page);
       max-width: var(--max-width);
       width: 100%;
-      padding: 1.7rem 1.1rem 2.4rem;
-      border-radius: 18px 18px 0 0;          
-      box-shadow: 0 -1px 0 rgba(0,0,0,0.03);
+      padding: 1.7rem 0.2rem 2.4rem; /* tighter side padding to feel like a doc */
+      margin: 0 auto;
+      /* no radius, no shadow to keep it flat */
     }
 
     @media (min-width: 768px) {
@@ -116,7 +85,7 @@
         padding: 2.2rem 1.5rem 3rem;
       }
       .page {
-        padding: 2.2rem 2.2rem 2.8rem;
+        padding: 2.2rem 0 2.8rem;
       }
     }
 
@@ -125,6 +94,16 @@
       margin: 0 0 0.4rem;
       font-weight: 700;
       letter-spacing: -0.02em;
+    }
+
+    .page-inner {
+      padding: 0 1.1rem;
+    }
+
+    @media (min-width: 768px) {
+      .page-inner {
+        padding: 0 0.5rem;
+      }
     }
 
     .underline {
@@ -211,259 +190,262 @@
 
   <main>
     <article class="page" id="content">
-      <h1>Privacy policy</h1>
-      <div class="underline" aria-hidden="true"></div>
+      <div class="page-inner">
+        <h1>Privacy policy</h1>
+        <div class="underline" aria-hidden="true"></div>
 
-      <p class="meta">
-        Last updated: <strong>November 21, 2025</strong>
-      </p>
+        <p class="meta">
+          Last updated: <strong>November 21, 2025</strong>
+        </p>
 
-      <p>
-        At Axcended, our mission is to help learners, tutors and mentors grow.
-        Protecting your privacy is part of that. This Privacy Policy explains
-        how Axcended (“we”, “us”, “our”) collects, uses and protects your
-        information when you use the Axcended mobile application, website and
-        related services (the “Service”).
-      </p>
+        <p>
+          At Axcended, our mission is to help learners, tutors and mentors grow.
+          Protecting your privacy is part of that. This Privacy Policy explains
+          how Axcended (“we”, “us”, “our”) collects, uses and protects your
+          information when you use the Axcended mobile application, website and
+          related services (the “Service”).
+        </p>
 
-      <p class="muted">
-        By using Axcended, you agree to the practices described here. If you do
-        not agree, please do not use the Service.
-      </p>
+        <p class="muted">
+          By using Axcended, you agree to the practices described here. If you do
+          not agree, please do not use the Service.
+        </p>
 
-      <hr />
+        <hr />
 
-      <div class="toc" aria-label="Table of contents">
-        <div class="toc-title">Contents</div>
-        <ol>
-          <li><a href="#who-we-are">1. Who we are</a></li>
-          <li><a href="#data-we-collect">2. Information we collect</a></li>
-          <li><a href="#how-we-use">3. How we use your information</a></li>
-          <li><a href="#cookies">4. Cookies and tracking technologies</a></li>
-          <li><a href="#sharing">5. How we share your information</a></li>
-          <li><a href="#retention">6. Data retention & account deletion</a></li>
-          <li><a href="#rights">7. Your rights and choices</a></li>
-          <li><a href="#security">8. Security of your data</a></li>
-          <li><a href="#children">9. Children and students</a></li>
-          <li><a href="#changes">10. Changes to this policy</a></li>
-          <li><a href="#contact">11. Contact us</a></li>
-        </ol>
+        <div class="toc" aria-label="Table of contents">
+          <div class="toc-title">Contents</div>
+          <ol>
+            <li><a href="#who-we-are">1. Who we are</a></li>
+            <li><a href="#data-we-collect">2. Information we collect</a></li>
+            <li><a href="#how-we-use">3. How we use your information</a></li>
+            <li><a href="#cookies">4. Cookies and tracking technologies</a></li>
+            <li><a href="#sharing">5. How we share your information</a></li>
+            <li><a href="#retention">6. Data retention & account deletion</a></li>
+            <li><a href="#rights">7. Your rights and choices</a></li>
+            <li><a href="#security">8. Security of your data</a></li>
+            <li><a href="#children">9. Children and students</a></li>
+            <li><a href="#changes">10. Changes to this policy</a></li>
+            <li><a href="#contact">11. Contact us</a></li>
+          </ol>
+        </div>
+
+        <hr />
+
+        <!-- 1. Who we are -->
+        <section id="who-we-are">
+          <h2>1. Who we are</h2>
+          <p>
+            Axcended is a South African learning and mentorship platform that
+            connects high-school and university learners with tutors, mentors,
+            classes, games, study groups and other educational content.
+          </p>
+          <p>
+            When we say “Axcended”, “we”, or “us” in this policy, we are referring
+            to the team that designs, builds and operates the Axcended app and
+            website.
+          </p>
+        </section>
+
+        <!-- 2. Information we collect -->
+        <section id="data-we-collect">
+          <h2>2. Information we collect</h2>
+
+          <h3>2.1 Information you give to us</h3>
+          <p>We collect information you provide directly when you use Axcended, including:</p>
+          <ul>
+            <li><strong>Account details</strong> – your name, email address, password, and basic profile information such as grade, school, university or study interests.</li>
+            <li><strong>Tutor / mentor profile details</strong> – if you sign up as a tutor or mentor, we may collect extra information such as subjects you teach, short bio, qualifications and links you choose to share.</li>
+            <li><strong>Content and activity</strong> – messages, posts, comments, homework uploads, session notes, answers in quizzes and games, and any files you choose to upload.</li>
+            <li><strong>Subscription and payment information</strong> – the type of plan you choose, purchase history, renewal status and transaction IDs. Payments are processed by Google Play or other payment providers; we do not store your full card details.</li>
+            <li><strong>Support requests</strong> – information you send us when you contact support (for example screenshots, crash descriptions or feedback).</li>
+          </ul>
+
+          <h3>2.2 Information we collect automatically (usage data)</h3>
+          <p>
+            When you use the app or website, we automatically collect some information
+            about how it is used so we can keep Axcended secure and improve the
+            experience. This may include:
+          </p>
+          <ul>
+            <li>Device information (device model, operating system, app version, language).</li>
+            <li>IP address and approximate location (e.g. country or region), mainly to keep the platform safe and prevent abuse.</li>
+            <li>Pages and screens you view, buttons you tap, time spent in different sections, and general usage patterns.</li>
+            <li>Crash logs and diagnostic information that help us fix bugs and improve performance.</li>
+          </ul>
+
+          <h3>2.3 Information from third-party sign-in</h3>
+          <p>
+            If you choose to sign in with Google, Apple, Facebook or other
+            providers, we receive basic profile information from that service
+            (such as your name, email address and a unique identifier), according
+            to the permissions you grant there.
+          </p>
+        </section>
+
+        <!-- 3. How we use your information -->
+        <section id="how-we-use">
+          <h2>3. How we use your information</h2>
+          <p>We use the information we collect to:</p>
+          <ul>
+            <li>Let you create and manage your Axcended account and profile.</li>
+            <li>Match students with tutors, mentors, classes, groups and challenges.</li>
+            <li>Run learning features – including lessons, quizzes, games, progress tracking and other tools inside the app.</li>
+            <li>Process subscriptions and in-app purchases, and show you the correct access, plans and wallets inside the app.</li>
+            <li>Communicate with you about updates, class reminders, notifications, security alerts and important changes to Axcended.</li>
+            <li>Analyse usage so we can understand what is working, fix issues and build better features for students and tutors.</li>
+            <li>Protect the Axcended community by detecting spam, abuse, cheating and security risks.</li>
+            <li>Comply with our legal obligations and enforce our Terms of Use.</li>
+          </ul>
+          <p>
+            If we introduce AI-powered features (for example automatic marking or
+            study recommendations), we will clearly explain how those features use
+            your content and results inside the app.
+          </p>
+        </section>
+
+        <!-- 4. Cookies -->
+        <section id="cookies">
+          <h2>4. Cookies and tracking technologies</h2>
+          <p>
+            Our website uses cookies and similar technologies to remember your
+            preferences and understand how the site is used. A cookie is a small
+            file stored on your device.
+          </p>
+
+          <h3>Types of cookies we use</h3>
+          <ul>
+            <li><strong>Essential cookies</strong> — required to keep you logged in and secure and to run core features of the website.</li>
+            <li><strong>Preference cookies</strong> — remember things like language or display settings.</li>
+            <li><strong>Analytics cookies</strong> — help us understand how people discover and use Axcended so we can improve it.</li>
+            <li><strong>Marketing cookies</strong> — may be used to promote Axcended on other platforms and measure campaign performance.</li>
+          </ul>
+
+          <p>
+            You can control cookies through your browser settings. If you block
+            certain cookies, some parts of the Service may not work as expected.
+          </p>
+        </section>
+
+        <!-- 5. Sharing -->
+        <section id="sharing">
+          <h2>5. How we share your information</h2>
+          <p>
+            We do not sell your personal data. We share information only when it
+            is needed to run Axcended or when we are legally required to. This may
+            include:
+          </p>
+          <ul>
+            <li><strong>Service providers</strong> who host our servers, send emails and notifications, provide analytics and crash reporting, or process payments on our behalf.</li>
+            <li><strong>Tutors, mentors and learners</strong> – your name and profile information may be visible to people you connect with in classes, groups or sessions.</li>
+            <li><strong>App stores and payment providers</strong> – such as Google Play Billing, to manage purchases and subscriptions.</li>
+            <li><strong>Legal and safety</strong> – when we believe it is necessary to comply with the law, respond to a lawful request, or protect the rights, property and safety of Axcended, our users or others.</li>
+            <li><strong>Business changes</strong> – if we ever participate in a merger, acquisition or similar event, your information may be transferred as part of that process, but this Privacy Policy will continue to apply unless you are told otherwise.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Retention & deletion -->
+        <section id="retention">
+          <h2>6. Data retention & account deletion</h2>
+          <p>
+            We keep your information only for as long as it is needed for the
+            purposes described in this policy, including any legal or reporting
+            requirements.
+          </p>
+          <p>
+            If you decide that Axcended is no longer for you, you can request
+            deletion of your account. When you do:
+          </p>
+          <ul>
+            <li>We delete or anonymise the personal data we no longer need.</li>
+            <li>We may keep limited records (for example transaction history needed for tax and accounting) for the period required by law.</li>
+          </ul>
+          <p>
+            You can request account deletion from within the app (where the
+            feature is available) or by emailing us at
+            <a href="mailto:axcended1@gmail.com">axcended1@gmail.com</a> from the
+            email address linked to your account.
+          </p>
+        </section>
+
+        <!-- 7. Rights -->
+        <section id="rights">
+          <h2>7. Your rights and choices</h2>
+          <p>
+            We want you to feel in control of your information. Depending on your
+            location and local laws, you may have the right to:
+          </p>
+          <ul>
+            <li>Access the personal information we hold about you.</li>
+            <li>Ask us to correct information that is inaccurate or incomplete.</li>
+            <li>Request deletion of your account and certain personal data.</li>
+            <li>Object to or request that we limit certain types of processing.</li>
+            <li>Withdraw consent where we rely on your consent (for example for marketing emails).</li>
+          </ul>
+          <p>
+            To exercise any of these rights, please contact us using the details
+            in the “Contact us” section. We may ask you to verify your identity
+            before completing your request.
+          </p>
+        </section>
+
+        <!-- 8. Security -->
+        <section id="security">
+          <h2>8. Security of your data</h2>
+          <p>
+            We use reasonable technical and organisational measures to protect
+            your personal information, such as encryption in transit, secure
+            hosting and access controls. However, no method of transmission or
+            storage is completely secure, and we cannot promise absolute security.
+          </p>
+          <p>
+            If you believe your account has been compromised, please contact us
+            immediately so we can help.
+          </p>
+        </section>
+
+        <!-- 9. Children -->
+        <section id="children">
+          <h2>9. Children and students</h2>
+          <p>
+            Axcended is designed for students and young people, often with the
+            involvement of parents, guardians, schools or tutors. We encourage
+            responsible use of the app and open conversations between students,
+            parents and educators about privacy and safety online.
+          </p>
+          <p>
+            If you believe we have collected personal information from a child in
+            a way that is inappropriate or without the right permissions, please
+            let us know and we will investigate and take action where needed.
+          </p>
+        </section>
+
+        <!-- 10. Changes -->
+        <section id="changes">
+          <h2>10. Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time as Axcended
+            evolves. When we make changes, we will update the “Last updated” date
+            at the top of this page. In some cases, we may also notify you in the
+            app or by email.
+          </p>
+        </section>
+
+        <!-- 11. Contact -->
+        <section id="contact">
+          <h2>11. Contact us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, your data, or how
+            Axcended works, we would love to hear from you.
+          </p>
+          <p>
+            Email: <a href="mailto:axcended1@gmail.com">axcended1@gmail.com</a>
+          </p>
+        </section>
       </div>
-
-      <hr />
-
-      <!-- 1. Who we are -->
-      <section id="who-we-are">
-        <h2>1. Who we are</h2>
-        <p>
-          Axcended is a South African learning and mentorship platform that
-          connects high-school and university learners with tutors, mentors,
-          classes, games, study groups and other educational content.
-        </p>
-        <p>
-          When we say “Axcended”, “we”, or “us” in this policy, we are referring
-          to the team that designs, builds and operates the Axcended app and
-          website.
-        </p>
-      </section>
-
-      <!-- 2. Information we collect -->
-      <section id="data-we-collect">
-        <h2>2. Information we collect</h2>
-
-        <h3>2.1 Information you give to us</h3>
-        <p>We collect information you provide directly when you use Axcended, including:</p>
-        <ul>
-          <li><strong>Account details</strong> – your name, email address, password, and basic profile information such as grade, school, university or study interests.</li>
-          <li><strong>Tutor / mentor profile details</strong> – if you sign up as a tutor or mentor, we may collect extra information such as subjects you teach, short bio, qualifications and links you choose to share.</li>
-          <li><strong>Content and activity</strong> – messages, posts, comments, homework uploads, session notes, answers in quizzes and games, and any files you choose to upload.</li>
-          <li><strong>Subscription and payment information</strong> – the type of plan you choose, purchase history, renewal status and transaction IDs. Payments are processed by Google Play or other payment providers; we do not store your full card details.</li>
-          <li><strong>Support requests</strong> – information you send us when you contact support (for example screenshots, crash descriptions or feedback).</li>
-        </ul>
-
-        <h3>2.2 Information we collect automatically (usage data)</h3>
-        <p>
-          When you use the app or website, we automatically collect some information
-          about how it is used so we can keep Axcended secure and improve the
-          experience. This may include:
-        </p>
-        <ul>
-          <li>Device information (device model, operating system, app version, language).</li>
-          <li>IP address and approximate location (e.g. country or region), mainly to keep the platform safe and prevent abuse.</li>
-          <li>Pages and screens you view, buttons you tap, time spent in different sections, and general usage patterns.</li>
-          <li>Crash logs and diagnostic information that help us fix bugs and improve performance.</li>
-        </ul>
-
-        <h3>2.3 Information from third-party sign-in</h3>
-        <p>
-          If you choose to sign in with Google, Apple, Facebook or other
-          providers, we receive basic profile information from that service
-          (such as your name, email address and a unique identifier), according
-          to the permissions you grant there.
-        </p>
-      </section>
-
-      <!-- 3. How we use your information -->
-      <section id="how-we-use">
-        <h2>3. How we use your information</h2>
-        <p>We use the information we collect to:</p>
-        <ul>
-          <li>Let you create and manage your Axcended account and profile.</li>
-          <li>Match students with tutors, mentors, classes, groups and challenges.</li>
-          <li>Run learning features – including lessons, quizzes, games, progress tracking and other tools inside the app.</li>
-          <li>Process subscriptions and in-app purchases, and show you the correct access, plans and wallets inside the app.</li>
-          <li>Communicate with you about updates, class reminders, notifications, security alerts and important changes to Axcended.</li>
-          <li>Analyse usage so we can understand what is working, fix issues and build better features for students and tutors.</li>
-          <li>Protect the Axcended community by detecting spam, abuse, cheating and security risks.</li>
-          <li>Comply with our legal obligations and enforce our Terms of Use.</li>
-        </ul>
-        <p>
-          If we introduce AI-powered features (for example automatic marking or
-          study recommendations), we will clearly explain how those features use
-          your content and results inside the app.
-        </p>
-      </section>
-
-      <!-- 4. Cookies -->
-      <section id="cookies">
-        <h2>4. Cookies and tracking technologies</h2>
-        <p>
-          Our website uses cookies and similar technologies to remember your
-          preferences and understand how the site is used. A cookie is a small
-          file stored on your device.
-        </p>
-
-        <h3>Types of cookies we use</h3>
-        <ul>
-          <li><strong>Essential cookies</strong> — required to keep you logged in and secure and to run core features of the website.</li>
-          <li><strong>Preference cookies</strong> — remember things like language or display settings.</li>
-          <li><strong>Analytics cookies</strong> — help us understand how people discover and use Axcended so we can improve it.</li>
-          <li><strong>Marketing cookies</strong> — may be used to promote Axcended on other platforms and measure campaign performance.</li>
-        </ul>
-
-        <p>
-          You can control cookies through your browser settings. If you block
-          certain cookies, some parts of the Service may not work as expected.
-        </p>
-      </section>
-
-      <!-- 5. Sharing -->
-      <section id="sharing">
-        <h2>5. How we share your information</h2>
-        <p>
-          We do not sell your personal data. We share information only when it
-          is needed to run Axcended or when we are legally required to. This may
-          include:
-        </p>
-        <ul>
-          <li><strong>Service providers</strong> who host our servers, send emails and notifications, provide analytics and crash reporting, or process payments on our behalf.</li>
-          <li><strong>Tutors, mentors and learners</strong> – your name and profile information may be visible to people you connect with in classes, groups or sessions.</li>
-          <li><strong>App stores and payment providers</strong> – such as Google Play Billing, to manage purchases and subscriptions.</li>
-          <li><strong>Legal and safety</strong> – when we believe it is necessary to comply with the law, respond to a lawful request, or protect the rights, property and safety of Axcended, our users or others.</li>
-          <li><strong>Business changes</strong> – if we ever participate in a merger, acquisition or similar event, your information may be transferred as part of that process, but this Privacy Policy will continue to apply unless you are told otherwise.</li>
-        </ul>
-      </section>
-
-      <!-- 6. Retention & deletion -->
-      <section id="retention">
-        <h2>6. Data retention & account deletion</h2>
-        <p>
-          We keep your information only for as long as it is needed for the
-          purposes described in this policy, including any legal or reporting
-          requirements.
-        </p>
-        <p>
-          If you decide that Axcended is no longer for you, you can request
-          deletion of your account. When you do:
-        </p>
-        <ul>
-          <li>We delete or anonymise the personal data we no longer need.</li>
-          <li>We may keep limited records (for example transaction history needed for tax and accounting) for the period required by law.</li>
-        </ul>
-        <p>
-          You can request account deletion from within the app (where the
-          feature is available) or by emailing us at
-          <a href="mailto:axcended1@gmail.com">axcended1@gmail.com</a> from the
-          email address linked to your account.
-        </p>
-      </section>
-
-      <!-- 7. Rights -->
-      <section id="rights">
-        <h2>7. Your rights and choices</h2>
-        <p>
-          We want you to feel in control of your information. Depending on your
-          location and local laws, you may have the right to:
-        </p>
-        <ul>
-          <li>Access the personal information we hold about you.</li>
-          <li>Ask us to correct information that is inaccurate or incomplete.</li>
-          <li>Request deletion of your account and certain personal data.</li>
-          <li>Object to or request that we limit certain types of processing.</li>
-          <li>Withdraw consent where we rely on your consent (for example for marketing emails).</li>
-        </ul>
-        <p>
-          To exercise any of these rights, please contact us using the details
-          in the “Contact us” section. We may ask you to verify your identity
-          before completing your request.
-        </p>
-      </section>
-
-      <!-- 8. Security -->
-      <section id="security">
-        <h2>8. Security of your data</h2>
-        <p>
-          We use reasonable technical and organisational measures to protect
-          your personal information, such as encryption in transit, secure
-          hosting and access controls. However, no method of transmission or
-          storage is completely secure, and we cannot promise absolute security.
-        </p>
-        <p>
-          If you believe your account has been compromised, please contact us
-          immediately so we can help.
-        </p>
-      </section>
-
-      <!-- 9. Children -->
-      <section id="children">
-        <h2>9. Children and students</h2>
-        <p>
-          Axcended is designed for students and young people, often with the
-          involvement of parents, guardians, schools or tutors. We encourage
-          responsible use of the app and open conversations between students,
-          parents and educators about privacy and safety online.
-        </p>
-        <p>
-          If you believe we have collected personal information from a child in
-          a way that is inappropriate or without the right permissions, please
-          let us know and we will investigate and take action where needed.
-        </p>
-      </section>
-
-      <!-- 10. Changes -->
-      <section id="changes">
-        <h2>10. Changes to this policy</h2>
-        <p>
-          We may update this Privacy Policy from time to time as Axcended
-          evolves. When we make changes, we will update the “Last updated” date
-          at the top of this page. In some cases, we may also notify you in the
-          app or by email.
-        </p>
-      </section>
-
-      <!-- 11. Contact -->
-      <section id="contact">
-        <h2>11. Contact us</h2>
-        <p>
-          If you have any questions about this Privacy Policy, your data, or how
-          Axcended works, we would love to hear from you.
-        </p>
-        <p>
-          Email: <a href="mailto:axcended1@gmail.com">axcended1@gmail.com</a>
-        </p>
-      </section>
     </article>
   </main>
 </body>
 </html>
+
 
