@@ -1,1 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axcended — Privacy policy</title>
+  <meta name="description" content="Privacy policy for the Axcended app and website." />
+  <meta name="color-scheme" content="light" />
+
+  <style>
+    :root {
+      --nav-bg: #111827;       /* dark navy header */
+      --nav-text: #F9FAFB;
+      --bg: #F3F4F6;           /* light grey app background */
+      --page: #FFFFFF;
+      --text: #111827;
+      --muted: #6B7280;
+      --accent: #22A6F2;       /* blue underline */
+      --border: #E5E7EB;
+      --max-width: 840px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: #2563EB;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover,
+    a:focus-visible {
+      text-decoration-thickness: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0.5rem 0.75rem;
+      background: var(--nav-bg);
+      color: var(--nav-text);
+      border-radius: 999px;
+      z-index: 50;
+      margin: 0.5rem;
+    }
+
+    /* Top dark bar like the mockup */
+    .topbar {
+      background: var(--nav-bg);
+      color: var(--nav-text);
+      padding: 0.9rem 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar-brand {
+      font-size: 1.1rem;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .topbar-menu {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.18rem;
+    }
+
+    .topbar-menu span {
+      width: 18px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--nav-text);
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 1rem 2.5rem;
+    }
+
+    .page {
+      background: var(--page);
+      max-width: var(--max-width);
+      width: 100%;
+      padding: 1.7rem 1.1rem 2.4rem;
+      border-radius: 18px 18px 0 0;          /* rounded top like mobile */
+      box-shadow: 0 -1px 0 rgba(0,0,0,0.03);
+    }
+
+    @media (min-width: 768px) {
+      main {
+        padding: 2.2rem 1.5rem 3rem;
+      }
+      .page {
+        padding: 2.2rem 2.2rem 2.8rem;
+      }
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      margin: 0 0 0.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .underline {
+      width: 72px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 999px;
+      margin-bottom: 1.1rem;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .meta strong {
+      font-weight: 600;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.25rem 0;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin: 1.4rem 0 0.4rem;
+    }
+
+    h3 {
+      font-size: 0.98rem;
+      margin: 1rem 0 0.3rem;
+    }
+
+    p {
+      margin: 0 0 0.6rem;
+      font-size: 0.94rem;
+    }
+
+    ul {
+      margin: 0.25rem 0 0.7rem 1.2rem;
+      padding: 0;
+      font-size: 0.94rem;
+    }
+
+    li + li {
+      margin-top: 0.18rem;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .toc {
+      font-size: 0.92rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .toc-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .toc a {
+      text-decoration: none;
+      color: #1D4ED8;
+    }
+
+    .toc a:hover,
+    .toc a:focus-visible {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="#content" class="skip-link">Skip to main content</a>
+
+  <!-- Dark header bar -->
+  <header class="topbar">
+    <div class="topbar-brand">AXCENDED</div>
+    <div class="topbar-menu" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- White content area like the screenshot -->
+  <main>
+    <article class="page" id="content">
+      <h1>Privacy policy</h1>
+      <div class="underline" aria-hidden="true"></div>
+
+      <p class="meta">
+        Last updated: <strong>November 21, 2025</strong>
+      </p>
+
+      <p>
+        This Privacy Policy explains how Axcended (“we”, “us”, “our”) collects,
+        uses and protects your information when you use the Axcended mobile
+        application, website and related services (“Service”).
+      </p>
+
+      <p class="muted">
+        This is a general template and does not constitute legal advice. Please
+        ask a qualified lawyer to review it for your specific situation.
+      </p>
+
+      <hr />
+
+      <!-- Table of contents like the blue links in the example -->
+      <div class="toc" aria-label="Table of contents">
+        <div class="toc-title">Contents</div>
+        <ol>
+          <li><a href="#who-we-are">Collecting and Using Your Personal Data</a></li>
+          <li><a href="#cookies">Cookies and Tracking Technologies</a></li>
+          <li><a href="#sharing">How We Share Your Personal Data</a></li>
+          <li><a href="#rights">Your Rights and Choices</a></li>
+          <li><a href="#security">Security of Your Personal Data</a></li>
+          <li><a href="#changes">Changes to This Privacy Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ol>
+      </div>
+
+      <hr />
+
+      <!-- Sections -->
+      <section id="who-we-are">
+        <h2>Collecting and Using Your Personal Data</h2>
+
+        <h3>Types of Data Collected – Personal Data</h3>
+        <p>
+          While using our Service, we may ask you to provide us with certain
+          personally identifiable information that can be used to contact or
+          identify you. Personally identifiable information may include, but is
+          not limited to:
+        </p>
+        <ul>
+          <li>Email address</li>
+          <li>First name and last name</li>
+          <li>Profile information such as grade, subjects, school or university</li>
+          <li>Payment-related information (processed via app stores / payment providers)</li>
+          <li>Any content you upload (messages, posts, homework, files)</li>
+        </ul>
+
+        <h3>Usage Data</h3>
+        <p>
+          Usage Data is collected automatically when using the Service. Usage
+          Data may include information such as your device’s Internet Protocol
+          (IP) address, device type, operating system, app version, the pages or
+          screens you visit, time and date of your visit, time spent on those
+          pages, crash logs and other diagnostic data.
+        </p>
+
+        <h3>Information from Third-Party Services</h3>
+        <p>
+          If you sign in using Google, Apple, Facebook or other providers, we
+          may receive basic profile information (such as your name, email
+          address and an ID) from that service, depending on your settings with
+          that provider.
+        </p>
+      </section>
+
+      <section id="cookies">
+        <h2>Cookies and Tracking Technologies</h2>
+        <p>
+          We use cookies and similar tracking technologies to track the activity
+          on our website and to store certain information. Cookies are small
+          files placed on your device. You can instruct your browser to refuse
+          all cookies or to indicate when a cookie is being sent. Some parts of
+          the Service may not function properly if you disable cookies.
+        </p>
+
+        <h3>Types of Cookies We Use</h3>
+        <ul>
+          <li><strong>Essential cookies</strong> — required for login, security and core features.</li>
+          <li><strong>Preference cookies</strong> — remember your settings (for example language).</li>
+          <li><strong>Analytics cookies</strong> — help us understand how users interact with the Service.</li>
+          <li><strong>Marketing cookies</strong> — may be used to show Axcended ads on other platforms.</li>
+        </ul>
+      </section>
+
+      <section id="sharing">
+        <h2>How We Share Your Personal Data</h2>
+        <p>
+          We do not sell your personal data. We may share your information with:
+        </p>
+        <ul>
+          <li>Service providers who help us operate, improve and support the Service.</li>
+          <li>Payment processors and app stores that handle subscriptions and purchases.</li>
+          <li>Tutors and learners where needed to run classes, chats or groups.</li>
+          <li>
+            Law enforcement or regulators when required by law or to protect our
+            rights and the safety of users.
+          </li>
+          <li>
+            Another organisation in connection with a merger, acquisition or
+            similar event, where your information may be transferred as an asset.
+          </li>
+        </ul>
+      </section>
+
+      <section id="rights">
+        <h2>Your Rights and Choices</h2>
+        <p>
+          Depending on your location, you may have rights to:
+        </p>
+        <ul>
+          <li>Access the personal data we hold about you.</li>
+          <li>Request correction of inaccurate or incomplete data.</li>
+          <li>Request deletion of your account and certain stored data.</li>
+          <li>Object to or restrict some types of processing.</li>
+          <li>Withdraw consent where processing is based on consent.</li>
+        </ul>
+        <p>
+          To exercise these rights, please contact us using the details in the
+          “Contact Us” section below.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>Security of Your Personal Data</h2>
+        <p>
+          We use appropriate technical and organisational measures to protect
+          your personal data. However, no method of transmission over the
+          Internet or method of electronic storage is 100% secure, and we
+          cannot guarantee absolute security.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
+          We may update our Privacy Policy from time to time. We will notify you
+          of any material changes by posting the new policy on this page and
+          updating the “Last updated” date at the top. In some cases, we may
+          also notify you via the app or by email.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions about this Privacy Policy or how we handle
+          your data, you can contact us at:
+        </p>
+        <p>
+          Email: <a href="mailto:p">axcended1@gmail.com</a><br />
+          (Replace with your real contact details.)
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
 
